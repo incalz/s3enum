@@ -11,7 +11,7 @@ docker build
   --build-arg AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
   --build-arg AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY . -t s3enu \
 docker run -p 8001:8001 s3enum \
-or kubectl run s3enum --image=s3enum --port=5701
+or kubectl run s3enum --image=s3enum --port=8001 \
 curling localhost:8001/output.txt returns a list of our s3 bucket
 
 # helm charts running this images
