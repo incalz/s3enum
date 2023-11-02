@@ -1,3 +1,4 @@
+# this pulls a python base image installing flask and awscli calling run script
 FROM python:3
 
 WORKDIR /app
