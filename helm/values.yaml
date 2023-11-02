@@ -1,0 +1,20 @@
+replicaCount: 1
+
+containers:
+  bucket_pod:
+    imageName: s3enum
+    pullPolicy: Always
+    tag: latest
+
+guivolumes:
+  some_pvc: 5Gi
+
+timezone: "UTC"
+
+podSecurityContext:
+  runAsUser: 0
+
+resources:
+  limits:
+    cpu: 2
+    memory: 10Gi
